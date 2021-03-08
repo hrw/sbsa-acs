@@ -150,7 +150,7 @@ payload()
   uint32_t data;
 
   if (count == 0) {
-      val_print(AVS_PRINT_WARN, "\n        No UART defined by Platform      ", 0);
+      val_print(AVS_PRINT_TEST, "\n        No UART defined by Platform      ", 0);
       val_set_status(index, RESULT_SKIP(g_sbsa_level, TEST_NUM, 01));
       return;
   }
